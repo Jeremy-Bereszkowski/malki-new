@@ -50,7 +50,7 @@ const Hero = () => {
                             fontSize: { xs: '1.125rem', sm: '1.25rem' },
                         }}
                     >
-                        COUNSELLOR & FAMILY THERAPIST
+                        FINDING NEW PATHWAYS
                     </Typography>
                     <Box sx={{ textAlign: 'center', py: { xs: 1, lg: 1 }, px: { xs: 14, lg: 18 } }}>
                         <Divider sx={{ color: 'text.secondary', backgroundColor: 'text.secondary', height: '2px', border: 'none' }} component="hr" />
@@ -66,7 +66,7 @@ const Hero = () => {
                             fontSize: { xs: '1.125rem', sm: '1.25rem' },
                         }}
                     >
-                        FINDING NEW PATHWAYS
+                        COUNSELLOR & FAMILY THERAPIST
                     </Typography>
                 </Box>
 
