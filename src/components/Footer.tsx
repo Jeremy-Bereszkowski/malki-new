@@ -64,7 +64,7 @@ const Footer = () => {
                                 </Link>
                             </Typography>
                             <Typography variant="body2">
-                                Israel
+                                Tel Aviv, Israel
                             </Typography>
                         </Box>
                     </Grid>
