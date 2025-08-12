@@ -4,20 +4,10 @@ import {
     Container,
     Typography,
     Grid,
-    Link,
-    List,
-    ListItem,
-    ListItemText,
-    Divider,
+    Link
 } from '@mui/material'
 
 const Footer = () => {
-    const handleNavClick = (href: string) => {
-        const element = document.querySelector(href)
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' })
-        }
-    }
 
     return (
         <Box
@@ -30,7 +20,6 @@ const Footer = () => {
         >
             <Container maxWidth="xl">
                 <Grid container spacing={4} justifyContent={'space-between'}>
-                    {/* Brand */}
                     <Grid item xs={12} md={4}>
                         <Typography
                             variant="h4"
@@ -64,24 +53,18 @@ const Footer = () => {
                         </Typography>
                     </Grid>
 
-                    {/* Contact Iqnfo */}
                     <Grid item xs={12} sm={6} md={4}>
                         <Typography variant="h6" sx={{ fontWeight: 600, mb: 2 }}>
                             Get In Touch
                         </Typography>
                         <Box sx={{ color: 'grey.300', mb: 3 }}>
                             <Typography variant="body2" sx={{ mb: 1 }}>
-                                <Link color={"#a3aca3"} href={"tel:+61450527478"}>
-                                    (+61) 0450 527 478
-                                </Link>
-                            </Typography>
-                            <Typography variant="body2" sx={{ mb: 1 }}>
                                 <Link color={"#a3aca3"} href={"mailto:malki.new@gmail.com"}>
                                     malki.new@gmail.com
                                 </Link>
                             </Typography>
                             <Typography variant="body2">
-                                Tel Aviv, Israel
+                                Israel
                             </Typography>
                         </Box>
                     </Grid>

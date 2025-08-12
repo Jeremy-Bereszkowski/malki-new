@@ -1,15 +1,8 @@
 'use client'
-import {Box, Container, Typography, Button, Stack, Divider} from '@mui/material'
+import {Box, Container, Typography, Divider} from '@mui/material'
 import { KeyboardArrowDown } from '@mui/icons-material'
 
 const Hero = () => {
-    const handleNavClick = (href: string) => {
-        const element = document.querySelector(href)
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' })
-        }
-    }
-
     return (
         <Box
             sx={{
@@ -35,7 +28,7 @@ const Hero = () => {
                         variant="h1"
                         component="h1"
                         sx={{
-                            mb: 1,
+                            mb: 4,
                             color: 'text.primary',
                             maxWidth: '4xl',
                             mx: 'auto',
@@ -46,14 +39,10 @@ const Hero = () => {
                             New
                         </Box>
                     </Typography>
-                    <Box sx={{ textAlign: 'center', py: { xs: 4, lg: 4 }, px: { xs: 8, lg: 12 } }}>
-                        <Divider sx={{ color: 'text.primary' }} component="hr" />
-                    </Box>
                     <Typography
                         variant="h5"
                         component="p"
                         sx={{
-                            mb: 1,
                             color: 'text.primary',
                             maxWidth: 600,
                             mx: 'auto',
@@ -63,11 +52,13 @@ const Hero = () => {
                     >
                         COUNSELLOR & FAMILY THERAPIST
                     </Typography>
+                    <Box sx={{ textAlign: 'center', py: { xs: 1, lg: 1 }, px: { xs: 14, lg: 18 } }}>
+                        <Divider sx={{ color: 'text.secondary', backgroundColor: 'text.secondary', height: '2px', border: 'none' }} component="hr" />
+                    </Box>
                     <Typography
                         variant="h5"
                         component="p"
                         sx={{
-                            mb: 1,
                             color: 'text.primary',
                             maxWidth: 600,
                             mx: 'auto',
@@ -75,7 +66,7 @@ const Hero = () => {
                             fontSize: { xs: '1.125rem', sm: '1.25rem' },
                         }}
                     >
-                        FINDING NEW PATHWAYS BY WORKING TOGETHER
+                        FINDING NEW PATHWAYS
                     </Typography>
                 </Box>
 
