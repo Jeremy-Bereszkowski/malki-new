@@ -64,7 +64,9 @@ const Footer = () => {
                                 </Link>
                             </Typography>
                             <Typography variant="body2">
-                                Tel Aviv, Israel
+                                <Link color={"#a3aca3"} href={"https://www.linkedin.com/in/malki-new-952555154"}>
+                                    LinkedIn
+                                </Link>
                             </Typography>
                         </Box>
                     </Grid>
