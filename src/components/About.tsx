@@ -1,9 +1,43 @@
 'use client'
-import {Avatar, Box, Card, CardContent, Container, Grid, Typography} from "@mui/material";
-import {Person} from "@mui/icons-material";
-import Image from "next/image";
+import {
+    Avatar,
+    Box,
+    Card,
+    CardContent,
+    Container,
+    Grid, List,
+    ListItem,
+    ListItemIcon,
+    ListItemText,
+    Typography
+} from "@mui/material";
+import {FiberManualRecord, Person} from "@mui/icons-material";
 
 const About = () => {
+    const text = [
+        "I am an experienced counsellor and family therapist in private practice. I speak English, German, French and some Yiddish.",
+        "In my practice I see adult individuals, couples and families. My experience inclues working for 16 years in the counselling team at Jewish Care Victoria, a social welfare organization in Melbourne, Australia, where I worked with a range of diverse client presentations.",
+        "My passion is to understand and help people.",
+        "I have been described as having a calm, considered approach and referred to as a 'safe pair of hands'."
+    ]
+    const qualifications = [
+        "Masters of Social Science - Family Therapy, Swinburne University Melbourne, Australia, 2012",
+        "Clinical member of the Australian Association of Family Therapists (AAFT), 2006",
+        "Graduate Diploma in Social Science - Family Therapy, Swinburne University Melbourne/Australia, 2003",
+        "Postgraduate training in Psychoanalytical Psychotherapy with a member of the Société Belge de Psychanalyse de Bruxelles, 1988",
+        "Diploma of Psychology, Psychotechnical Institute Antwerp/Belgium, 1985"
+    ]
+    const specialties = [
+        "Anxiety/Depression",
+        "Aged care issues, including Holocaust trauma",
+        "Carer support",
+        "Grief & Loss",
+        "Fertility issues & IVF treatment support",
+        "Life transition/Menopause",
+        "Parenting support",
+        "Relationship issues, including marital & pre-marital",
+        "Stress management, Life-work balance, Self-esteem"
+    ]
     return (
         <Box id="about" sx={{ py: { xs: 8, lg: 12 }, backgroundColor: 'background.paper' }}>
             <Container maxWidth="xl">
@@ -14,54 +48,72 @@ const About = () => {
                         </Typography>
 
                         <Box sx={{ '& > p': { mb: 2, color: 'text.secondary', fontSize: '1.125rem', lineHeight: 1.7 } }}>
-                            <Typography component="p">
-                                I am a highly experienced counsellor and family therapist in private practice.
-                            </Typography>
-
-                            <Typography component="p">
-                                My experience includes working for 16 years in the counselling team at Jewish Care Victoria in Melbourne.
-                            </Typography>
-
-                            <Typography component="p">
-                                My passion is to understand and help people.
-                                I believe that authenticity and empathy are the most important skills of a therapist.
-                                In my practice, I provide a safe, respectful and confidential environment which allows my clients to experience a healing & supportive relationship during counselling.
-                                I encourage my clients to actively participate in the counselling process by setting goals and building on their strengths.
-                            </Typography>
-
-                            <Typography component="p">
-                                Although everyone has their own coping strategies to manage life's challenges, it is often beneficial to get professional help.
-                                A counsellor can help clients gain clarity and insight into the issues they are struggling with.
-                                Counselling can help clients develop strategies to build resilience and move forward positively in their lives.
-                            </Typography>
-
-                            <Typography component="p">
-                                In my practice, I see individuals, couples and families.
-                            </Typography>
+                            {text.map((text) => (
+                                <Typography key={text}  component="p">
+                                    {text}
+                                </Typography>
+                            ))}
                         </Box>
 
                         <Grid container spacing={2} sx={{ mt: 4 }}>
                             <Grid item xs={12} sm={6}>
                                 <Card sx={{ backgroundColor: 'grey.50' }}>
+
                                     <CardContent>
-                                        <Typography variant="h6" component="h4" sx={{ mb: 1, fontWeight: 600 }}>
+                                        <Typography variant="h6" component="h4" sx={{ fontWeight: 600 }}>
                                             Qualifications
                                         </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            Master of Family Therapy, ACA Registered
-                                        </Typography>
+                                        <List sx={{ '& .MuiListItem-root': { py: 0 } }}>
+                                            {qualifications.map((qualification) => (
+                                                <ListItem key={qualification} alignItems="flex-start" disableGutters>
+                                                    <ListItemIcon sx={{ pt: 0.25, mt: 1, minWidth: 24 }}>
+                                                        <FiberManualRecord
+                                                            sx={{
+                                                                fontSize: 8,
+                                                                color: 'primary.main',
+                                                            }}
+                                                        />
+                                                    </ListItemIcon>
+                                                    <ListItemText
+                                                        secondary={
+                                                            <Typography variant="body2" color="text.secondary">
+                                                                {qualification}
+                                                            </Typography>
+                                                        }
+                                                    />
+                                                </ListItem>
+                                            ))}
+                                        </List>
                                     </CardContent>
                                 </Card>
                             </Grid>
                             <Grid item xs={12} sm={6}>
                                 <Card sx={{ backgroundColor: 'grey.50' }}>
                                     <CardContent>
-                                        <Typography variant="h6" component="h4" sx={{ mb: 1, fontWeight: 600 }}>
-                                            Experience
+                                        <Typography variant="h6" component="h4" sx={{ fontWeight: 600 }}>
+                                            Specialties
                                         </Typography>
-                                        <Typography variant="body2" color="text.secondary">
-                                            10+ years in counselling and therapy
-                                        </Typography>
+                                        <List sx={{ '& .MuiListItem-root': { py: 0 } }}>
+                                            {specialties.map((qualification) => (
+                                                <ListItem key={qualification} alignItems="flex-start" disableGutters>
+                                                    <ListItemIcon sx={{ pt: 0.25, mt: 1, minWidth: 24 }}>
+                                                        <FiberManualRecord
+                                                            sx={{
+                                                                fontSize: 8,
+                                                                color: 'primary.main',
+                                                            }}
+                                                        />
+                                                    </ListItemIcon>
+                                                    <ListItemText
+                                                        secondary={
+                                                            <Typography variant="body2" color="text.secondary">
+                                                                {qualification}
+                                                            </Typography>
+                                                        }
+                                                    />
+                                                </ListItem>
+                                            ))}
+                                        </List>
                                     </CardContent>
                                 </Card>
                             </Grid>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Merriweather } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import { ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
 import theme from "@/src/theme/theme";
@@ -11,11 +11,9 @@ export const metadata: Metadata = {
     keywords: 'counsellor, therapist, family therapy, mental health, counselling',
 }
 
-export default function RootLayout({
-                                       children,
-                                   }: {
+export default function RootLayout({ children } : {
     children: React.ReactNode
-}) {
+}){
     return (
         <html lang="en">
         <head>
