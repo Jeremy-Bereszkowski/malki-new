@@ -18,7 +18,7 @@ const Hero = () => {
                     inset: 0,
                     backgroundImage: `url(/footpath-background.jpg)`,
                     backgroundRepeat: 'no-repeat',
-                    opacity: 0.3,
+                    opacity: 0.7,
                 },
             }}
         >
@@ -34,10 +34,7 @@ const Hero = () => {
                             mx: 'auto',
                         }}
                     >
-                        Malki{' '}
-                        <Box component="span" sx={{ color: 'primary.main' }}>
-                            New
-                        </Box>
+                        Malki New
                     </Typography>
                     <Typography
                         variant="h5"
@@ -50,7 +47,7 @@ const Hero = () => {
                             fontSize: { xs: '1.125rem', sm: '1.25rem' },
                         }}
                     >
-                        FINDING NEW PATHWAYS
+                        FINDING NEW PATHWAYS TOGETHER
                     </Typography>
                     <Box sx={{ textAlign: 'center', py: { xs: 1, lg: 1 }, px: { xs: 14, lg: 18 } }}>
                         <Divider sx={{ color: 'text.secondary', backgroundColor: 'text.secondary', height: '2px', border: 'none' }} component="hr" />

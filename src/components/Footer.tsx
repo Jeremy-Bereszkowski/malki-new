@@ -63,11 +63,6 @@ const Footer = () => {
                                     malki.new@gmail.com
                                 </Link>
                             </Typography>
-                            <Typography variant="body2">
-                                <Link color={"#a3aca3"} href={"https://www.linkedin.com/in/malki-new-952555154"}>
-                                    LinkedIn
-                                </Link>
-                            </Typography>
                         </Box>
                     </Grid>
                 </Grid>

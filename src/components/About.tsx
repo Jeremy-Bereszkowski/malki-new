@@ -15,7 +15,7 @@ import {FiberManualRecord, Person} from "@mui/icons-material";
 
 const About = () => {
     const text = [
-        "I am an experienced counsellor and family therapist in private practice. I speak English, German, French and some Yiddish.",
+        "I am an experienced counsellor and family therapist in private practice. I speak English, German and French.",
         "In my practice I see adult individuals, couples and families. My experience inclues working for 16 years in the counselling team at Jewish Care Victoria, a social welfare organization in Melbourne, Australia, where I worked with a range of diverse client presentations.",
         "My passion is to understand and help people.",
         "I have been described as having a calm, considered approach and referred to as a 'safe pair of hands'."
@@ -27,17 +27,17 @@ const About = () => {
         "Postgraduate training in Psychoanalytical Psychotherapy with a member of the Société Belge de Psychanalyse de Bruxelles, 1988",
         "Diploma of Psychology, Psychotechnical Institute Antwerp/Belgium, 1985"
     ]
-    const specialties = [
-        "Anxiety/Depression",
-        "Aged care issues, including Holocaust trauma",
-        "Carer support",
-        "Grief & Loss",
-        "Fertility issues & IVF treatment support",
-        "Life transition/Menopause",
-        "Parenting support",
-        "Relationship issues, including marital & pre-marital",
-        "Stress management, Life-work balance, Self-esteem"
-    ]
+    // const specialties = [
+    //     "Anxiety/Depression",
+    //     "Aged care issues, including Holocaust trauma",
+    //     "Carer support",
+    //     "Grief & Loss",
+    //     "Fertility issues & IVF treatment support",
+    //     "Life transition/Menopause",
+    //     "Parenting support",
+    //     "Relationship issues, including marital & pre-marital",
+    //     "Stress management, Life-work balance, Self-esteem"
+    // ]
     return (
         <Box id="about" sx={{ py: { xs: 8, lg: 12 }, backgroundColor: 'background.paper' }}>
             <Container maxWidth="xl">
@@ -56,7 +56,7 @@ const About = () => {
                         </Box>
 
                         <Grid container spacing={2} sx={{ mt: 4 }}>
-                            <Grid item xs={12} sm={6}>
+                            <Grid item xs={12} sm={12}>
                                 <Card sx={{ backgroundColor: 'grey.50' }}>
 
                                     <CardContent>
@@ -87,36 +87,36 @@ const About = () => {
                                     </CardContent>
                                 </Card>
                             </Grid>
-                            <Grid item xs={12} sm={6}>
-                                <Card sx={{ backgroundColor: 'grey.50' }}>
-                                    <CardContent>
-                                        <Typography variant="h6" component="h4" sx={{ fontWeight: 600 }}>
-                                            Specialties
-                                        </Typography>
-                                        <List sx={{ '& .MuiListItem-root': { py: 0 } }}>
-                                            {specialties.map((qualification) => (
-                                                <ListItem key={qualification} alignItems="flex-start" disableGutters>
-                                                    <ListItemIcon sx={{ pt: 0.25, mt: 1, minWidth: 24 }}>
-                                                        <FiberManualRecord
-                                                            sx={{
-                                                                fontSize: 8,
-                                                                color: 'primary.main',
-                                                            }}
-                                                        />
-                                                    </ListItemIcon>
-                                                    <ListItemText
-                                                        secondary={
-                                                            <Typography variant="body2" color="text.secondary">
-                                                                {qualification}
-                                                            </Typography>
-                                                        }
-                                                    />
-                                                </ListItem>
-                                            ))}
-                                        </List>
-                                    </CardContent>
-                                </Card>
-                            </Grid>
+                            {/*<Grid item xs={12} sm={6}>*/}
+                            {/*    <Card sx={{ backgroundColor: 'grey.50' }}>*/}
+                            {/*        <CardContent>*/}
+                            {/*            <Typography variant="h6" component="h4" sx={{ fontWeight: 600 }}>*/}
+                            {/*                Specialties*/}
+                            {/*            </Typography>*/}
+                            {/*            <List sx={{ '& .MuiListItem-root': { py: 0 } }}>*/}
+                            {/*                {specialties.map((qualification) => (*/}
+                            {/*                    <ListItem key={qualification} alignItems="flex-start" disableGutters>*/}
+                            {/*                        <ListItemIcon sx={{ pt: 0.25, mt: 1, minWidth: 24 }}>*/}
+                            {/*                            <FiberManualRecord*/}
+                            {/*                                sx={{*/}
+                            {/*                                    fontSize: 8,*/}
+                            {/*                                    color: 'primary.main',*/}
+                            {/*                                }}*/}
+                            {/*                            />*/}
+                            {/*                        </ListItemIcon>*/}
+                            {/*                        <ListItemText*/}
+                            {/*                            secondary={*/}
+                            {/*                                <Typography variant="body2" color="text.secondary">*/}
+                            {/*                                    {qualification}*/}
+                            {/*                                </Typography>*/}
+                            {/*                            }*/}
+                            {/*                        />*/}
+                            {/*                    </ListItem>*/}
+                            {/*                ))}*/}
+                            {/*            </List>*/}
+                            {/*        </CardContent>*/}
+                            {/*    </Card>*/}
+                            {/*</Grid>*/}
                         </Grid>
                     </Grid>
 

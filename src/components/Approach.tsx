@@ -51,38 +51,36 @@ const Approach = () => {
                                 fontSize: '1.125rem',
                             }}
                         >
-                            I believe that therapy is most effective when it feels safe, collaborative, and
-                            tailored to your individual needs. My approach integrates various evidence-based
-                            therapeutic modalities while maintaining a warm, non-judgmental environment where
-                            you can explore, heal, and grow.
+                            My therapeutic style centers on authenticity, empathy and trust, which allows clients to experience a healing and supportive relationship. I am committed to creating a safe, respectful and confidential space where my clients feel genuinely heard and understood. I encourage my clients to actively participate in the counselling process by setting goals and building on their strengths. I use an eclectic approach to therapy which involves assessing what framework and techniques work best for each individual, couple and family.
                         </Typography>
 
-                        <List sx={{ '& .MuiListItem-root': { py: 1.5 } }}>
-                            {approaches.map((approach, index) => (
-                                <ListItem key={index} alignItems="flex-start" disableGutters>
-                                    <ListItemIcon sx={{ mt: 1, minWidth: 24 }}>
-                                        <FiberManualRecord
-                                            sx={{
-                                                fontSize: 8,
-                                                color: 'primary.main',
-                                            }}
-                                        />
-                                    </ListItemIcon>
-                                    <ListItemText
-                                        primary={
-                                            <Typography variant="h6" component="h4" sx={{ fontWeight: 600, mb: 0.5 }}>
-                                                {approach.title}
-                                            </Typography>
-                                        }
-                                        secondary={
-                                            <Typography variant="body1" color="text.secondary">
-                                                {approach.description}
-                                            </Typography>
-                                        }
-                                    />
-                                </ListItem>
-                            ))}
-                        </List>
+
+                        {/*<List sx={{ '& .MuiListItem-root': { py: 1.5 } }}>*/}
+                        {/*    {approaches.map((approach, index) => (*/}
+                        {/*        <ListItem key={index} alignItems="flex-start" disableGutters>*/}
+                        {/*            <ListItemIcon sx={{ mt: 1, minWidth: 24 }}>*/}
+                        {/*                <FiberManualRecord*/}
+                        {/*                    sx={{*/}
+                        {/*                        fontSize: 8,*/}
+                        {/*                        color: 'primary.main',*/}
+                        {/*                    }}*/}
+                        {/*                />*/}
+                        {/*            </ListItemIcon>*/}
+                        {/*            <ListItemText*/}
+                        {/*                primary={*/}
+                        {/*                    <Typography variant="h6" component="h4" sx={{ fontWeight: 600, mb: 0.5 }}>*/}
+                        {/*                        {approach.title}*/}
+                        {/*                    </Typography>*/}
+                        {/*                }*/}
+                        {/*                secondary={*/}
+                        {/*                    <Typography variant="body1" color="text.secondary">*/}
+                        {/*                        {approach.description}*/}
+                        {/*                    </Typography>*/}
+                        {/*                }*/}
+                        {/*            />*/}
+                        {/*        </ListItem>*/}
+                        {/*    ))}*/}
+                        {/*</List>*/}
                     </Grid>
 
                     <Grid item xs={12} lg={6}>

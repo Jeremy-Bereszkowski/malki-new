@@ -112,17 +112,6 @@ const Services = () => {
                         </Grid>
                     ))}
                 </Grid>
-
-                <Box sx={{ textAlign: 'center', mt: 6 }}>
-                    <Button
-                        variant="contained"
-                        size="large"
-                        onClick={() => handleNavClick('#contact')}
-                        sx={{ px: 4, py: 2 }}
-                    >
-                        Schedule a Consultation
-                    </Button>
-                </Box>
             </Container>
         </Box>
     )

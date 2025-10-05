@@ -10,7 +10,6 @@ import {
     IconButton
 } from '@mui/material'
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Header = () => {
     const trigger = useScrollTrigger({
@@ -45,20 +44,6 @@ const Header = () => {
                                         }}
                                     >
                                         <MailOutlineIcon sx={{ color: 'text.secondary'}} />
-                                    </IconButton>
-                                </Tooltip>
-                                <Tooltip title={"LinkedIn"} placement="bottom">
-                                    <IconButton
-                                        href={"https://www.linkedin.com/in/malki-new-952555154"}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        sx={{
-                                            '&:hover': {
-                                                backgroundColor: 'primary.50',
-                                            }
-                                        }}
-                                    >
-                                        <LinkedInIcon sx={{ color: 'text.secondary'}} />
                                     </IconButton>
                                 </Tooltip>
                             </Box>
