@@ -43,7 +43,7 @@ const Header = () => {
                                             }
                                         }}
                                     >
-                                        <MailOutlineIcon sx={{ color: 'text.secondary'}} />
+                                        <MailOutlineIcon sx={{ color: 'text.primary'}} />
                                     </IconButton>
                                 </Tooltip>
                             </Box>
