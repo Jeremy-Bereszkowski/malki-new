@@ -11,7 +11,7 @@ import {
     ListItemText,
     Typography
 } from "@mui/material";
-import {FiberManualRecord, Person} from "@mui/icons-material";
+import {FiberManualRecord} from "@mui/icons-material";
 
 const About = () => {
     const text = [
@@ -27,19 +27,23 @@ const About = () => {
         "Postgraduate training in Psychoanalytical Psychotherapy with a member of the Société Belge de Psychanalyse de Bruxelles, 1988",
         "Diploma of Psychology, Psychotechnical Institute Antwerp/Belgium, 1985"
     ]
-    // const specialties = [
-    //     "Anxiety/Depression",
-    //     "Aged care issues, including Holocaust trauma",
-    //     "Carer support",
-    //     "Grief & Loss",
-    //     "Fertility issues & IVF treatment support",
-    //     "Life transition/Menopause",
-    //     "Parenting support",
-    //     "Relationship issues, including marital & pre-marital",
-    //     "Stress management, Life-work balance, Self-esteem"
-    // ]
+    const specialtiesCol1 = [
+        "Anxiety/Depression",
+        "Adaptation support for immigrants",
+        "Carer support",
+        "Grief and Loss",
+        "Life transition & Menopause",
+        "Parenting & step-parenting support",
+    ]
+    const specialtiesCol2 = [
+        "Aged care issues including Holocaust trauma 2nd & 3rd generation",
+        "Infertility and IVF treatment support",
+        "Relationship issues including couples, family, friends",
+        "Dating support for singles & pre-marital counseling for engaged couples",
+        "Self-esteem, stress management, life/work balance",
+    ]
     return (
-        <Box id="about" sx={{ py: { xs: 8, lg: 12 }, backgroundColor: '#eef7f7' }}>
+        <Box id="about" sx={{ py: { xs: 8, lg: 12 }, background: 'linear-gradient(0deg,rgba(231, 241, 241, 1) 0%, rgba(247, 252, 252, 1) 50%, rgba(231, 241, 241, 1) 100%)' }}>
             <Container maxWidth="xl">
                 <Grid container spacing={{ xs: 6, lg: 8 }} alignItems="center">
                     <Grid item xs={12} lg={6}>
@@ -87,36 +91,63 @@ const About = () => {
                                     </CardContent>
                                 </Card>
                             </Grid>
-                            {/*<Grid item xs={12} sm={6}>*/}
-                            {/*    <Card sx={{ backgroundColor: 'grey.50' }}>*/}
-                            {/*        <CardContent>*/}
-                            {/*            <Typography variant="h6" component="h4" sx={{ fontWeight: 600 }}>*/}
-                            {/*                Specialties*/}
-                            {/*            </Typography>*/}
-                            {/*            <List sx={{ '& .MuiListItem-root': { py: 0 } }}>*/}
-                            {/*                {specialties.map((qualification) => (*/}
-                            {/*                    <ListItem key={qualification} alignItems="flex-start" disableGutters>*/}
-                            {/*                        <ListItemIcon sx={{ pt: 0.25, mt: 1, minWidth: 24 }}>*/}
-                            {/*                            <FiberManualRecord*/}
-                            {/*                                sx={{*/}
-                            {/*                                    fontSize: 8,*/}
-                            {/*                                    color: 'primary.main',*/}
-                            {/*                                }}*/}
-                            {/*                            />*/}
-                            {/*                        </ListItemIcon>*/}
-                            {/*                        <ListItemText*/}
-                            {/*                            secondary={*/}
-                            {/*                                <Typography variant="body2" color="text.secondary">*/}
-                            {/*                                    {qualification}*/}
-                            {/*                                </Typography>*/}
-                            {/*                            }*/}
-                            {/*                        />*/}
-                            {/*                    </ListItem>*/}
-                            {/*                ))}*/}
-                            {/*            </List>*/}
-                            {/*        </CardContent>*/}
-                            {/*    </Card>*/}
-                            {/*</Grid>*/}
+                            <Grid item xs={12} sm={12}>
+                                <Card sx={{ backgroundColor: 'grey.50' }}>
+                                    <CardContent>
+                                        <Typography variant="h6" component="h4" sx={{ fontWeight: 600 }}>
+                                            Specialties
+                                        </Typography>
+                                        <Grid container spacing={2} sx={{ mt: 4 }}>
+                                            <Grid item xs={12} sm={5}>
+                                                <List sx={{ '& .MuiListItem-root': { py: 0 } }}>
+                                                    {specialtiesCol1.map((specialty) => (
+                                                        <ListItem key={specialty} alignItems="flex-start" disableGutters>
+                                                            <ListItemIcon sx={{ pt: 0.25, mt: 1, minWidth: 24 }}>
+                                                                <FiberManualRecord
+                                                                    sx={{
+                                                                        fontSize: 8,
+                                                                        color: 'primary.main',
+                                                                    }}
+                                                                />
+                                                            </ListItemIcon>
+                                                            <ListItemText
+                                                                secondary={
+                                                                    <Typography variant="body2" color="text.secondary">
+                                                                        {specialty}
+                                                                    </Typography>
+                                                                }
+                                                            />
+                                                        </ListItem>
+                                                    ))}
+                                                </List>
+                                            </Grid>
+                                            <Grid item xs={12} sm={7}>
+                                                <List sx={{ '& .MuiListItem-root': { py: 0 } }}>
+                                                    {specialtiesCol2.map((specialty) => (
+                                                        <ListItem key={specialty} alignItems="flex-start" disableGutters>
+                                                            <ListItemIcon sx={{ pt: 0.25, mt: 1, minWidth: 24 }}>
+                                                                <FiberManualRecord
+                                                                    sx={{
+                                                                        fontSize: 8,
+                                                                        color: 'primary.main',
+                                                                    }}
+                                                                />
+                                                            </ListItemIcon>
+                                                            <ListItemText
+                                                                secondary={
+                                                                    <Typography variant="body2" color="text.secondary">
+                                                                        {specialty}
+                                                                    </Typography>
+                                                                }
+                                                            />
+                                                        </ListItem>
+                                                    ))}
+                                                </List>
+                                            </Grid>
+                                        </Grid>
+                                    </CardContent>
+                                </Card>
+                            </Grid>
                         </Grid>
                     </Grid>
 

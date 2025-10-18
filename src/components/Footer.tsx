@@ -12,7 +12,7 @@ const Footer = () => {
         <Box
             component="footer"
             sx={{
-                backgroundColor: 'primary.dark',
+                backgroundColor: 'primary.main',
                 color: 'white',
                 py: 6,
             }}
@@ -34,7 +34,7 @@ const Footer = () => {
                         <Typography
                             variant="h6"
                             sx={{
-                                color: 'grey.200',
+                                color: 'grey.100',
                                 mb: 2,
                             }}
                         >
@@ -43,7 +43,7 @@ const Footer = () => {
                         <Typography
                             variant="body2"
                             sx={{
-                                color: 'grey.300',
+                                color: 'grey.200',
                                 lineHeight: 1.6,
                             }}
                         >
@@ -56,7 +56,7 @@ const Footer = () => {
                         <Typography variant="h6" sx={{ fontWeight: 600, mb: 2 }}>
                             Get In Touch
                         </Typography>
-                        <Box sx={{ color: 'grey.300', mb: 3 }}>
+                        <Box sx={{ color: 'grey.200', mb: 3 }}>
                             <Typography variant="body2" sx={{ mb: 1 }}>
                                 <Link color={"#a3aca3"} href={"mailto:malki.new@gmail.com"}>
                                     malki.new@gmail.com

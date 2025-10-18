@@ -18,7 +18,7 @@ const Hero = () => {
                     inset: 0,
                     backgroundImage: `url(/footpath-background.jpg)`,
                     backgroundRepeat: 'no-repeat',
-                    opacity: 0.7,
+                    opacity: 0.85,
                 },
             }}
         >
@@ -66,13 +66,12 @@ const Hero = () => {
                         COUNSELLOR & FAMILY THERAPIST
                     </Typography>
                 </Box>
-
             </Container>
 
             <Box
                 sx={{
                     position: 'absolute',
-                    bottom: 32,
+                    bottom: 48,
                     left: '50%',
                     transform: 'translateX(-50%)',
                     animation: 'bounce 2s infinite',
@@ -81,15 +80,15 @@ const Hero = () => {
                             transform: 'translateX(-50%) translateY(0)',
                         },
                         '40%, 43%': {
-                            transform: 'translateX(-50%) translateY(-8px)',
+                            transform: 'translateX(-50%) translateY(-20px)',
                         },
                         '70%': {
-                            transform: 'translateX(-50%) translateY(-4px)',
+                            transform: 'translateX(-50%) translateY(-10px)',
                         },
                     },
                 }}
             >
-                <KeyboardArrowDown sx={{ fontSize: 32, color: 'primary.main' }} />
+                <KeyboardArrowDown sx={{ fontSize: 48, color: 'black' }} />
             </Box>
         </Box>
     )

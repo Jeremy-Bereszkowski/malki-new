@@ -6,7 +6,6 @@ import {
     Grid,
     Card,
     CardContent,
-    Button,
     Avatar,
 } from '@mui/material'
 import {
@@ -48,7 +47,7 @@ const Services = () => {
     }
 
     return (
-        <Box id="services" sx={{ py: { xs: 8, lg: 12 }, backgroundColor: 'grey.50' }}>
+        <Box id="services" sx={{ py: { xs: 8, lg: 12 }, background: 'linear-gradient(0deg,rgba(231, 241, 241, 1) 0%, rgba(247, 252, 252, 1) 50%, rgba(231, 241, 241, 1) 100%)' }}>
             <Container maxWidth="xl">
                 <Box sx={{ textAlign: 'center', mb: 8 }}>
                     <Typography variant="h2" component="h2" sx={{ mb: 3, color: 'text.primary' }}>
@@ -87,8 +86,8 @@ const Services = () => {
                                     <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
                                         <Avatar
                                             sx={{
-                                                backgroundColor: 'primary.50',
-                                                color: 'primary.main',
+                                                backgroundColor: 'primary.light',
+                                                color: 'primary.dark',
                                                 mr: 2,
                                                 width: 56,
                                                 height: 56,
