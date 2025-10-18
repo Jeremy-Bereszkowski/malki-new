@@ -33,7 +33,7 @@ const Approach = () => {
     ]
 
     return (
-        <Box id="approach" sx={{ py: { xs: 8, lg: 12 }, backgroundColor: 'background.paper' }}>
+        <Box id="approach" sx={{ py: { xs: 8, lg: 12 }, backgroundColor: '#eef7f7' }}>
             <Container maxWidth="xl">
                 <Grid container spacing={{ xs: 6, lg: 8 }} alignItems="center">
                     <Grid item xs={12} lg={6}>
@@ -94,21 +94,22 @@ const Approach = () => {
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 textAlign: 'center',
+                                boxShadow: "0 2px 8px rgba(98, 112, 98, 0.1)"
                             }}
                         >
                             <Box>
-                                <Avatar
-                                    sx={{
-                                        width: 96,
-                                        height: 96,
-                                        backgroundColor: 'primary.light',
-                                        color: 'primary.main',
-                                        mx: 'auto',
-                                        mb: 3,
-                                    }}
-                                >
-                                    <Favorite sx={{ fontSize: 48 }} />
-                                </Avatar>
+                                {/*<Avatar*/}
+                                {/*    sx={{*/}
+                                {/*        width: 96,*/}
+                                {/*        height: 96,*/}
+                                {/*        backgroundColor: 'primary.light',*/}
+                                {/*        color: 'primary.main',*/}
+                                {/*        mx: 'auto',*/}
+                                {/*        mb: 3,*/}
+                                {/*    }}*/}
+                                {/*>*/}
+                                {/*    <Favorite sx={{ fontSize: 48 }} />*/}
+                                {/*</Avatar>*/}
                                 <Typography variant="h4" component="h3" sx={{ mb: 2, fontWeight: 600 }}>
                                     Healing Through Connection
                                 </Typography>

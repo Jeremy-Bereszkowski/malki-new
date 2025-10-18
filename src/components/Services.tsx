@@ -34,8 +34,8 @@ const Services = () => {
             icon: <Favorite sx={{ fontSize: 32 }} />
         },
         {
-            title: "Trauma-Informed Care",
-            description: "Specialized support for those healing from trauma using evidence-based therapeutic approaches.",
+            title: "Treatment Approach",
+            description: "I use an eclectic approach to therapy which involves assessing what framework and techniques work best with each individual client, couple and family.",
             icon: <Shield sx={{ fontSize: 32 }} />
         }
     ]

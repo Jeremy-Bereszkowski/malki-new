@@ -39,7 +39,7 @@ const About = () => {
     //     "Stress management, Life-work balance, Self-esteem"
     // ]
     return (
-        <Box id="about" sx={{ py: { xs: 8, lg: 12 }, backgroundColor: 'background.paper' }}>
+        <Box id="about" sx={{ py: { xs: 8, lg: 12 }, backgroundColor: '#eef7f7' }}>
             <Container maxWidth="xl">
                 <Grid container spacing={{ xs: 6, lg: 8 }} alignItems="center">
                     <Grid item xs={12} lg={6}>
@@ -132,6 +132,7 @@ const About = () => {
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
+                                    boxShadow: "0 2px 8px rgba(98, 112, 98, 0.1)"
                                 }}
                             >
                                 <Avatar
