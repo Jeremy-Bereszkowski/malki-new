@@ -34,20 +34,13 @@ const Services = () => {
         },
         {
             title: 'Treatment Approach',
-            description: 'I use an eclectic approach to therapy which involves assessing what framework and techniques work best with each individual client, couple and family.',
+            description: 'I use an eclectic approach to therapy which involves assessing what framework and techniques work best with each individual client, couple and family. I incorporate Psychodynamic theory, Solution-Focused theory, Mindfulness techniques and Acceptance and Commitment Therapy (ACT).',
             icon: <Shield sx={{ fontSize: 32 }} />
         }
     ]
 
-    const handleNavClick = (href: string) => {
-        const element = document.querySelector(href)
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' })
-        }
-    }
-
     return (
-        <Box id='services' sx={{ py: { xs: 8, lg: 12 }, background: 'linear-gradient(0deg,rgba(231, 241, 241, 1) 0%, rgba(247, 252, 252, 1) 50%, rgba(231, 241, 241, 1) 100%)' }}>
+        <Box id='services' sx={{ py: { xs: 8, lg: 12 }, backgroundColor: '#b4ebff' }}>
             <Container maxWidth='xl'>
                 <Box sx={{ textAlign: 'center', mb: 8 }}>
                     <Typography variant='h2' component='h2' sx={{ mb: 3, color: 'text.primary' }}>

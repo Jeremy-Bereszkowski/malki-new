@@ -14,11 +14,16 @@ import {
 import {FiberManualRecord} from '@mui/icons-material';
 
 const About = () => {
-    const text = [
-        'I am an experienced counsellor and family therapist in private practice. I speak English, German and French.',
-        'In my practice I see adult individuals, couples and families. My experience inclues working for 16 years in the counselling team at Jewish Care Victoria, a social welfare organization in Melbourne, Australia, where I worked with a range of diverse client presentations.',
-        'My passion is to understand and help people.',
-        'I have been described as having a calm, considered approach and referred to as a \'safe pair of hands\'.'
+    const textBody1 = [
+        'I am an experienced counsellor and family therapist in private practice. In my practice I see adult individuals, couples and families.',
+        'I view therapy as a source of building resilience & adaptability under my approach to helping clients. I have a multicultural background, and I speak English, German and French.',
+        'My experience included 16 years in the counselling team at Jewish Care Victoria, a social welfare organization in Melbourne, Australia, There I worked with a range of diverse client presentations.',
+    ]
+    const textBody2 = [
+        'My passion is to understand and help clients. I have been described as having a calm, considered approach and I have been referred to as \'a safe pair of hands\'. My therapeutic style centers on authenticity, empathy and trust, which allows my clients to experience a healing and supportive relationship.',
+        'I am committed to creating a safe, respectful and confidential space where my clients feel genuinely seen and heard. I encourage my clients to actively participate in the counselling process by setting goals and building on their strengths. I use an eclectic approach to therapy which involves assessing what framework and techniques work best for each individual client, couple and family.',
+        'In my work with multicultural couples I don\'t take the role of an expert, I rather see myself as a mutual partner in exploring together the similarities and difference which can enhance the couple\'s relationship.',
+        'Many people find that regular therapy sessions can enhance the quality of life, even when things are going well. It is an investment in personal growth and mental health. Just like regular checkups for physical health, mental health care is crucial for overall well-being. It can help build resilience, enhance coping strategies, help with decision making, improve emotional awareness and provide support both during challenging - and positive times.',
     ]
     const qualifications = [
         'Masters of Social Science - Family Therapy, Swinburne University Melbourne, Australia, 2012',
@@ -43,26 +48,65 @@ const About = () => {
         'Self-esteem, stress management, life/work balance',
     ]
     return (
-        <Box id='about' sx={{ py: { xs: 8, lg: 12 }, background: 'linear-gradient(0deg,rgba(231, 241, 241, 1) 0%, rgba(247, 252, 252, 1) 50%, rgba(231, 241, 241, 1) 100%)' }}>
+        <Box id='about' sx={{ py: { xs: 8, lg: 12 }, backgroundColor: '#b4ebff' }}>
             <Container maxWidth='xl'>
-                <Grid container spacing={{ xs: 6, lg: 8 }} alignItems='center'>
-                    <Grid item xs={12} lg={6}>
+                <Grid>
+                    <Grid>
                         <Typography variant='h2' component='h2' sx={{ mb: 3, color: 'text.primary' }}>
                             Professional Profile
                         </Typography>
-
-                        <Box sx={{ '& > p': { mb: 2, color: 'text.secondary', fontSize: '1.125rem', lineHeight: 1.7 } }}>
-                            {text.map((text) => (
-                                <Typography key={text}  component='p'>
-                                    {text}
+                    </Grid>
+                    <Grid>
+                        <Grid container spacing={{ xs: 6, lg: 8 }} alignItems='center'>
+                            <Grid item xs={12} lg={6}>
+                                <Box sx={{ '& > p': { mb: 2, color: 'text.secondary', fontSize: '1.25rem', lineHeight: 1.7 } }}>
+                                    {textBody1.map((text) => (
+                                        <Typography key={text} component='p'>
+                                            {text}
+                                        </Typography>
+                                    ))}
+                                </Box>
+                                <Typography variant='h4' component='h2' sx={{ mb: 3, color: 'text.primary' }}>
+                                    My approach to therapy
                                 </Typography>
-                            ))}
-                        </Box>
-
+                                <Box sx={{ '& > p': { mb: 2, color: 'text.secondary', fontSize: '1.25rem', lineHeight: 1.7 } }}>
+                                    {textBody2.map((text) => (
+                                        <Typography key={text} component='p'>
+                                            {text}
+                                        </Typography>
+                                    ))}
+                                </Box>
+                                <Typography variant={'h6'} component={'p'}>
+                                    You are welcome to an initial 15 minute free Zoom consultation, to establish together whether we are a good fit.
+                                </Typography>
+                            </Grid>
+                            <Grid item xs={12} lg={6}>
+                                <Box
+                                    sx={{
+                                        aspectRatio: '3/5',
+                                        backgroundColor: '#b4ebff',
+                                        borderRadius: 1,
+                                        position: 'relative',
+                                        overflow: 'hidden',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        boxShadow: '0 2px 8px rgba(98, 112, 98, 0.1)'
+                                    }}
+                                >
+                                    <Avatar
+                                        sx={{ width: 300, height: 300 }}
+                                        src={'/avatar.jpg'}
+                                        alt={'Malki New Avatar Image'}
+                                    />
+                                </Box>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <Grid>
                         <Grid container spacing={2} sx={{ mt: 4 }}>
                             <Grid item xs={12} sm={12}>
-                                <Card sx={{ backgroundColor: 'grey.50' }}>
-
+                                <Card sx={{ backgroundColor: '#b4ebff' }}>
                                     <CardContent>
                                         <Typography variant='h6' component='h4' sx={{ fontWeight: 600 }}>
                                             Qualifications
@@ -80,7 +124,7 @@ const About = () => {
                                                     </ListItemIcon>
                                                     <ListItemText
                                                         secondary={
-                                                            <Typography variant='body2' color='text.secondary'>
+                                                            <Typography variant='body2' color='text.secondary' fontSize={'1.125rem'}>
                                                                 {qualification}
                                                             </Typography>
                                                         }
@@ -92,12 +136,12 @@ const About = () => {
                                 </Card>
                             </Grid>
                             <Grid item xs={12} sm={12}>
-                                <Card sx={{ backgroundColor: 'grey.50' }}>
+                                <Card sx={{ backgroundColor: '#b4ebff' }}>
                                     <CardContent>
                                         <Typography variant='h6' component='h4' sx={{ fontWeight: 600 }}>
                                             Specialties
                                         </Typography>
-                                        <Grid container spacing={2} sx={{ mt: 4 }}>
+                                        <Grid container spacing={2}>
                                             <Grid item xs={12} sm={5}>
                                                 <List sx={{ '& .MuiListItem-root': { py: 0 } }}>
                                                     {specialtiesCol1.map((specialty) => (
@@ -112,7 +156,7 @@ const About = () => {
                                                             </ListItemIcon>
                                                             <ListItemText
                                                                 secondary={
-                                                                    <Typography variant='body2' color='text.secondary'>
+                                                                    <Typography variant='body2' color='text.secondary' fontSize={'1.125rem'}>
                                                                         {specialty}
                                                                     </Typography>
                                                                 }
@@ -135,7 +179,7 @@ const About = () => {
                                                             </ListItemIcon>
                                                             <ListItemText
                                                                 secondary={
-                                                                    <Typography variant='body2' color='text.secondary'>
+                                                                    <Typography variant='body2' color='text.secondary' fontSize={'1.125rem'}>
                                                                         {specialty}
                                                                     </Typography>
                                                                 }
@@ -149,30 +193,6 @@ const About = () => {
                                 </Card>
                             </Grid>
                         </Grid>
-                    </Grid>
-
-                    <Grid item xs={12} lg={6}>
-                        <Box sx={{ position: 'relative' }}>
-                            <Box
-                                sx={{
-                                    aspectRatio: '4/5',
-                                    backgroundColor: 'grey.50',
-                                    borderRadius: 1,
-                                    position: 'relative',
-                                    overflow: 'hidden',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    boxShadow: '0 2px 8px rgba(98, 112, 98, 0.1)'
-                                }}
-                            >
-                                <Avatar
-                                    sx={{ width: 300, height: 300 }}
-                                    src={'/avatar.jpg'}
-                                    alt={'Malki New Avatar Image'}
-                                />
-                            </Box>
-                        </Box>
                     </Grid>
                 </Grid>
             </Container>
