@@ -22,11 +22,11 @@ const Hero = () => {
                 },
             }}
         >
-            <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
+            <Container maxWidth='lg' sx={{ position: 'relative', zIndex: 1 }}>
                 <Box sx={{ textAlign: 'center', paddingTop: { xs: 2, lg: 4 }, paddingBottom: { xs: 8, lg: 12 } }}>
                     <Typography
-                        variant="h1"
-                        component="h1"
+                        variant='h1'
+                        component='h1'
                         sx={{
                             mb: 4,
                             color: 'text.primary',
@@ -37,8 +37,8 @@ const Hero = () => {
                         Malki New
                     </Typography>
                     <Typography
-                        variant="h5"
-                        component="p"
+                        variant='h5'
+                        component='p'
                         sx={{
                             color: 'text.primary',
                             maxWidth: 600,
@@ -50,11 +50,11 @@ const Hero = () => {
                         FINDING NEW PATHWAYS TOGETHER
                     </Typography>
                     <Box sx={{ textAlign: 'center', py: { xs: 1, lg: 1 }, px: { xs: 14, lg: 18 } }}>
-                        <Divider sx={{ color: 'text.secondary', backgroundColor: 'text.secondary', height: '2px', border: 'none' }} component="hr" />
+                        <Divider sx={{ color: 'text.secondary', backgroundColor: 'text.secondary', height: '2px', border: 'none' }} component='hr' />
                     </Box>
                     <Typography
-                        variant="h5"
-                        component="p"
+                        variant='h5'
+                        component='p'
                         sx={{
                             color: 'text.primary',
                             maxWidth: 600,

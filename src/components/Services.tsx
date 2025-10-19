@@ -18,23 +18,23 @@ import {
 const Services = () => {
     const services = [
         {
-            title: "Individual Counselling",
-            description: "One-on-one sessions focused on personal growth, anxiety, depression, and life transitions.",
+            title: 'Individual Counselling',
+            description: 'One-on-one sessions focused on personal growth, anxiety, depression, and life transitions.',
             icon: <Person sx={{ fontSize: 32 }} />
         },
         {
-            title: "Family Therapy",
-            description: "Supporting families to improve communication, resolve conflicts, and strengthen relationships.",
+            title: 'Family Therapy',
+            description: 'Supporting families to improve communication, resolve conflicts, and strengthen relationships.',
             icon: <Group sx={{ fontSize: 32 }} />
         },
         {
-            title: "Couples Counselling",
-            description: "Helping couples navigate relationship challenges and build stronger, healthier connections.",
+            title: 'Couples Counselling',
+            description: 'Helping couples navigate relationship challenges and build stronger, healthier connections.',
             icon: <Favorite sx={{ fontSize: 32 }} />
         },
         {
-            title: "Treatment Approach",
-            description: "I use an eclectic approach to therapy which involves assessing what framework and techniques work best with each individual client, couple and family.",
+            title: 'Treatment Approach',
+            description: 'I use an eclectic approach to therapy which involves assessing what framework and techniques work best with each individual client, couple and family.',
             icon: <Shield sx={{ fontSize: 32 }} />
         }
     ]
@@ -47,15 +47,15 @@ const Services = () => {
     }
 
     return (
-        <Box id="services" sx={{ py: { xs: 8, lg: 12 }, background: 'linear-gradient(0deg,rgba(231, 241, 241, 1) 0%, rgba(247, 252, 252, 1) 50%, rgba(231, 241, 241, 1) 100%)' }}>
-            <Container maxWidth="xl">
+        <Box id='services' sx={{ py: { xs: 8, lg: 12 }, background: 'linear-gradient(0deg,rgba(231, 241, 241, 1) 0%, rgba(247, 252, 252, 1) 50%, rgba(231, 241, 241, 1) 100%)' }}>
+            <Container maxWidth='xl'>
                 <Box sx={{ textAlign: 'center', mb: 8 }}>
-                    <Typography variant="h2" component="h2" sx={{ mb: 3, color: 'text.primary' }}>
+                    <Typography variant='h2' component='h2' sx={{ mb: 3, color: 'text.primary' }}>
                         Therapeutic Services
                     </Typography>
                     <Typography
-                        variant="h5"
-                        component="p"
+                        variant='h5'
+                        component='p'
                         sx={{
                             color: 'text.secondary',
                             maxWidth: 600,
@@ -95,13 +95,13 @@ const Services = () => {
                                         >
                                             {service.icon}
                                         </Avatar>
-                                        <Typography variant="h4" component="h3" sx={{ fontWeight: 600 }}>
+                                        <Typography variant='h4' component='h3' sx={{ fontWeight: 600 }}>
                                             {service.title}
                                         </Typography>
                                     </Box>
                                     <Typography
-                                        variant="body1"
-                                        color="text.secondary"
+                                        variant='body1'
+                                        color='text.secondary'
                                         sx={{ lineHeight: 1.7 }}
                                     >
                                         {service.description}

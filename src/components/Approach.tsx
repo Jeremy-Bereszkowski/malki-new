@@ -10,35 +10,35 @@ import {
 const Approach = () => {
     const approaches = [
         {
-            title: "Person-Centered",
-            description: "Your unique experiences and perspectives guide our therapeutic journey together."
+            title: 'Person-Centered',
+            description: 'Your unique experiences and perspectives guide our therapeutic journey together.'
         },
         {
-            title: "Evidence-Based",
-            description: "Utilizing proven therapeutic modalities including CBT, DBT, and systemic approaches."
+            title: 'Evidence-Based',
+            description: 'Utilizing proven therapeutic modalities including CBT, DBT, and systemic approaches.'
         },
         {
-            title: "Culturally Sensitive",
-            description: "Honoring diverse backgrounds and ensuring culturally appropriate care."
+            title: 'Culturally Sensitive',
+            description: 'Honoring diverse backgrounds and ensuring culturally appropriate care.'
         },
         {
-            title: "Collaborative",
-            description: "Working together as partners in your healing and growth process."
+            title: 'Collaborative',
+            description: 'Working together as partners in your healing and growth process.'
         }
     ]
 
     return (
-        <Box id="approach" sx={{ py: { xs: 8, lg: 12 }, background: 'linear-gradient(0deg,rgba(231, 241, 241, 1) 0%, rgba(247, 252, 252, 1) 50%, rgba(231, 241, 241, 1) 100%)' }}>
-            <Container maxWidth="xl">
-                <Grid container spacing={{ xs: 6, lg: 8 }} alignItems="center">
+        <Box id='approach' sx={{ py: { xs: 8, lg: 12 }, background: 'linear-gradient(0deg,rgba(231, 241, 241, 1) 0%, rgba(247, 252, 252, 1) 50%, rgba(231, 241, 241, 1) 100%)' }}>
+            <Container maxWidth='xl'>
+                <Grid container spacing={{ xs: 6, lg: 8 }} alignItems='center'>
                     <Grid item xs={12} lg={6}>
-                        <Typography variant="h2" component="h2" sx={{ mb: 3, color: 'text.primary' }}>
+                        <Typography variant='h2' component='h2' sx={{ mb: 3, color: 'text.primary' }}>
                             My Therapeutic Approach
                         </Typography>
 
                         <Typography
-                            variant="h6"
-                            component="p"
+                            variant='h6'
+                            component='p'
                             sx={{
                                 mb: 4,
                                 color: 'text.secondary',
@@ -61,14 +61,14 @@ const Approach = () => {
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 textAlign: 'center',
-                                boxShadow: "0 2px 8px rgba(98, 112, 98, 0.1)"
+                                boxShadow: '0 2px 8px rgba(98, 112, 98, 0.1)'
                             }}
                         >
                             <Box>
-                                <Typography variant="h4" component="h3" sx={{ mb: 2, fontWeight: 600 }}>
+                                <Typography variant='h4' component='h3' sx={{ mb: 2, fontWeight: 600 }}>
                                     Healing Through Connection
                                 </Typography>
-                                <Typography variant="body1" color="text.secondary">
+                                <Typography variant='body1' color='text.secondary'>
                                     Building trust and understanding in every session
                                 </Typography>
                             </Box>
