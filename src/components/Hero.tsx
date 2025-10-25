@@ -8,7 +8,7 @@ const Hero = () => {
             sx={{
                 minHeight: '100vh',
                 display: 'flex',
-                alignItems: 'center',
+                alignItems: 'start',
                 justifyContent: 'center',
                 background: 'linear-gradient(135deg, #fefefe 0%, #f6f7f6 100%)',
                 position: 'relative',
@@ -17,12 +17,13 @@ const Hero = () => {
                     position: 'absolute',
                     inset: 0,
                     backgroundImage: `url(/footpath-background.jpg)`,
+                    backgroundPositionY: '-80px',
                     backgroundRepeat: 'no-repeat',
                     opacity: 0.85,
                 },
             }}
         >
-            <Container maxWidth='lg' sx={{ position: 'relative', zIndex: 1 }}>
+            <Container maxWidth='lg' sx={{ mt: '15rem', position: 'relative', zIndex: 1 }}>
                 <Box sx={{ textAlign: 'center', paddingTop: { xs: 2, lg: 4 }, paddingBottom: { xs: 8, lg: 12 } }}>
                     <Typography
                         variant='h1'

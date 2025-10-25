@@ -23,11 +23,11 @@ const About = () => {
         'My passion is to understand and help clients. I have been described as having a calm, considered approach and I have been referred to as \'a safe pair of hands\'. My therapeutic style centers on authenticity, empathy and trust, which allows my clients to experience a healing and supportive relationship.',
         'I am committed to creating a safe, respectful and confidential space where my clients feel genuinely seen and heard. I encourage my clients to actively participate in the counselling process by setting goals and building on their strengths. I use an eclectic approach to therapy which involves assessing what framework and techniques work best for each individual client, couple and family.',
         'In my work with multicultural couples I don\'t take the role of an expert, I rather see myself as a mutual partner in exploring together the similarities and difference which can enhance the couple\'s relationship.',
-        'Many people find that regular therapy sessions can enhance the quality of life, even when things are going well. It is an investment in personal growth and mental health. Just like regular checkups for physical health, mental health care is crucial for overall well-being. It can help build resilience, enhance coping strategies, help with decision making, improve emotional awareness and provide support both during challenging - and positive times.',
+        'Many people find that regular therapy sessions can enhance their quality of life, even when things are going well. It is an investment in personal growth and mental health. Just like regular checkups for physical health, mental health care is crucial for overall well-being. It can help build resilience, enhance coping strategies, help with decision making, improve emotional awareness and provide support both during challenging - and positive times.',
     ]
     const qualifications = [
         'Masters of Social Science - Family Therapy, Swinburne University Melbourne, Australia, 2012',
-        'Clinical member of the Australian Association of Family Therapists (AAFT), 2006',
+        'The Australian Association of Family Therapists (AAFT), 2006',
         'Graduate Diploma in Social Science - Family Therapy, Swinburne University Melbourne/Australia, 2003',
         'Postgraduate training in Psychoanalytical Psychotherapy with a member of the Société Belge de Psychanalyse de Bruxelles, 1988',
         'Diploma of Psychology, Psychotechnical Institute Antwerp/Belgium, 1985'

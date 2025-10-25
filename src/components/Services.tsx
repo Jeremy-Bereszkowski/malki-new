@@ -19,7 +19,7 @@ const Services = () => {
     const services = [
         {
             title: 'Individual Counselling',
-            description: 'One-on-one sessions focused on personal growth, anxiety, depression, and life transitions.',
+            description: 'One–on–one sessions helping you gain increased self-understanding, develop fresh perspectives, uncover resilience and strengths, acquire  new tools & techniques for managing life’s challenges.',
             icon: <Person sx={{ fontSize: 32 }} />
         },
         {
@@ -53,12 +53,40 @@ const Services = () => {
                             color: 'text.secondary',
                             maxWidth: 600,
                             mx: 'auto',
+                            mb: 3,
                             fontSize: '1.125rem',
                             lineHeight: 1.6,
                         }}
                     >
                         I offer a range of specialized counselling and therapy services tailored to meet
                         your unique needs and support your journey toward wellbeing.
+                    </Typography>
+                    <Typography
+                        variant='h5'
+                        component='p'
+                        sx={{
+                            color: 'text.secondary',
+                            maxWidth: 600,
+                            mx: 'auto',
+                            mb: 3,
+                            fontSize: '1.125rem',
+                            lineHeight: 1.6,
+                        }}
+                    >
+                        Fees for sessions can be on a sliding scale.
+                    </Typography>
+                    <Typography
+                        variant='h5'
+                        component='p'
+                        sx={{
+                            color: 'text.secondary',
+                            maxWidth: 600,
+                            mx: 'auto',
+                            fontSize: '1.125rem',
+                            lineHeight: 1.6,
+                        }}
+                    >
+                        Zoom sessions available.
                     </Typography>
                 </Box>
 
