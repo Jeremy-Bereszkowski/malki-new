@@ -18,6 +18,7 @@ const Hero = () => {
                     inset: 0,
                     backgroundImage: `url(/footpath-background.jpg)`,
                     backgroundPositionY: '-80px',
+                    backgroundPositionX: '40%',
                     backgroundRepeat: 'no-repeat',
                     opacity: 0.85,
                 },
