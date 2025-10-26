@@ -35,16 +35,16 @@ const About = () => {
     const specialtiesCol1 = [
         'Anxiety/Depression',
         'Adaptation support for immigrants',
+        'Aged care issues including Holocaust trauma 2nd & 3rd generation',
         'Carer support',
+        'Dating support for singles & pre-marital counseling for engaged couples',
         'Grief and Loss',
-        'Life transition & Menopause',
-        'Parenting & step-parenting support',
     ]
     const specialtiesCol2 = [
-        'Aged care issues including Holocaust trauma 2nd & 3rd generation',
         'Infertility and IVF treatment support',
+        'Life transition & Menopause',
+        'Parenting & step-parenting support',
         'Relationship issues including couples, family, friends',
-        'Dating support for singles & pre-marital counseling for engaged couples',
         'Self-esteem, stress management, life/work balance',
     ]
     return (
@@ -142,7 +142,7 @@ const About = () => {
                                             Specialties
                                         </Typography>
                                         <Grid container spacing={2}>
-                                            <Grid item xs={12} sm={5}>
+                                            <Grid item xs={12} sm={6}>
                                                 <List sx={{ '& .MuiListItem-root': { py: 0 } }}>
                                                     {specialtiesCol1.map((specialty) => (
                                                         <ListItem key={specialty} alignItems='flex-start' disableGutters>
@@ -165,7 +165,7 @@ const About = () => {
                                                     ))}
                                                 </List>
                                             </Grid>
-                                            <Grid item xs={12} sm={7}>
+                                            <Grid item xs={12} sm={6}>
                                                 <List sx={{ '& .MuiListItem-root': { py: 0 } }}>
                                                     {specialtiesCol2.map((specialty) => (
                                                         <ListItem key={specialty} alignItems='flex-start' disableGutters>
