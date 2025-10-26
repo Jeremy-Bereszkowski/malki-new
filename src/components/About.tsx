@@ -17,7 +17,7 @@ const About = () => {
     const textBody1 = [
         'I am an experienced counsellor and family therapist in private practice. In my practice I see adult individuals, couples and families.',
         'I view therapy as a source of building resilience & adaptability under my approach to helping clients. I have a multicultural background, and I speak English, German and French.',
-        'My experience included 16 years in the counselling team at Jewish Care Victoria, a social welfare organization in Melbourne, Australia, There I worked with a range of diverse client presentations.',
+        'My experience included 16 years in the counselling team at Jewish Care Victoria, a social welfare organization in Melbourne, Australia; there I worked with a range of diverse client presentations.',
     ]
     const textBody2 = [
         'My passion is to understand and help clients. I have been described as having a calm, considered approach and I have been referred to as \'a safe pair of hands\'. My therapeutic style centers on authenticity, empathy and trust, which allows my clients to experience a healing and supportive relationship.',
@@ -27,7 +27,6 @@ const About = () => {
     ]
     const qualifications = [
         'Masters of Social Science - Family Therapy, Swinburne University Melbourne, Australia, 2012',
-        'The Australian Association of Family Therapists (AAFT), 2006',
         'Graduate Diploma in Social Science - Family Therapy, Swinburne University Melbourne/Australia, 2003',
         'Postgraduate training in Psychoanalytical Psychotherapy with a member of the Société Belge de Psychanalyse de Bruxelles, 1988',
         'Diploma of Psychology, Psychotechnical Institute Antwerp/Belgium, 1985'
